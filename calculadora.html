@@ -1,0 +1,66 @@
+
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Calculadora Basica</title>
+	<script src="./js.js"></script>
+  <link rel="stylesheet" href="./css.css">
+  <nav id="main-menu">
+	<ul class="nav-bar">
+		 <li class="nav-button-home"><a href="../Memorama/memorama.html">Memorama</a></li>
+		 <li class="nav-button-services"><a href="../ag-contacto/agendarContacto.html">Agenda Contactos</a></li>
+		 
+	</ul>
+</nav>
+</head>
+
+<body>
+	<form name="fo">
+		<h1>Calculadora Basica</h1>
+		<table>
+			<tr>
+				<td colspan="5"><input type="text" name="valores" id="valores" onkeypress="return solonumeros(event)"></td>
+			
+			</tr>
+			<tr>
+				<td><input type="button" value="7" onclick="retornar(value)"></td>
+				<td><input type="button" value="8" onclick="retornar(value)"></td>
+				<td><input type="button" value="9" onclick="retornar(value)"></td>
+				<td><input type="button" value="+" onclick="comprobar(value)"></td>
+				<td><input type="button" value="-" onclick="comprobar(value)"></td>
+			</tr>
+
+				<td><input type="button" value="4" onclick="retornar(value)"></td>
+				<td><input type="button" value="5" onclick="retornar(value)"></td>
+				<td><input type="button" value="6" onclick="retornar(value)"></td>
+				<td><input type="button" value="*" onclick="comprobar(value)"></td>
+				<td><input type="button" value="/" onclick="comprobar(value)"></td>
+			</tr>
+
+				<td><input type="button" value="1" onclick="retornar(value)"></td>
+				<td><input type="button" value="2" onclick="retornar(value)"></td>
+				<td><input type="button" value="3" onclick="retornar(value)"></td>
+				<td><input type="button" value="DEL" onclick="eliminar()"></td>
+				<td><input type="button" value="C" onclick="eliminar_todo()"></td>
+			</tr>
+
+				<td colspan="2"><input type="button" value="0"></td>
+				<td></td>
+				<td colspan="2"><input type="button" value="=" onclick="calcular()"></td>
+				
+			</tr>
+
+
+		</table>	
+	
+
+	</form>	
+
+
+
+
+
+
+</body>
+</html>
